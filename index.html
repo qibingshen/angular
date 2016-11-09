@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="BegawanSystem">
+<head>
+	<meta charset="UTF-8">
+	<title>后台管理系统</title>
+	<link rel="stylesheet" type="text/css" href="/css/libs/bootstrap.css" >
+	<link rel="stylesheet" type="text/css" href="/css/style.css" >
+</head>
+<body ng-controller="begawanController">
+
+	<!-- 顶部注释 -->
+	<nav class="navbar navbar-default ws-header">
+		<div class="container-fluid navbar-left">
+			<div class="navbar-header">
+				<a class="navbar-brand header-img" href="#">
+					<img src="/images/logo_03.gif" alt="世尊">
+				</a>
+			</div>
+		</div>
+		<div class="navbar-r1 pull-right">
+			<div class="navbar-header pull-left">
+				<a class="navbar-brand header-img" href="#">
+					<img src="/images/pic_06.gif" alt="世尊">
+				</a>
+			</div>
+			<div class="pull-left ws-admin-right">
+				您好<a href="#"></a>欢迎登陆!
+			</div>
+		</div>
+	</nav>
+	
+
+
+	<!-- 左侧内容 -->
+	<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 pull-left ws-mian-l">
+		<left-accordion></left-accordion>
+	</div>
+	
+	<!-- 右侧内容 -->
+	<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 pull-right">
+		
+		<ui-view></ui-view>	
+		
+	</div>
+	
+
+	<script src="/js/libs/jquery.js"></script>
+	<script src="/js/libs/bootstrap.js"></script>
+	<script src="/js/libs/angular.js"></script>
+	<script src="/js/libs/angular-ui-router.js"></script>
+
+
+	<script src="/js/service.js"></script>
+
+
+	
+	<script src="/js/controller.js"></script>
+	<script src="/js/directive.js"></script>
+	<script src="/js/app.js"></script>
+</body>
+</html>

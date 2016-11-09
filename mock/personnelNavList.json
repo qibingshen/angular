@@ -1,0 +1,64 @@
+﻿{
+	"navList": [
+		"人员信息",
+		"招聘申请",
+		"职位调整申请",
+		"离职申请",
+		"培训申请",
+		"公交审批"
+	],
+	"tableHead": [
+		"false",
+		"工号",
+		"员工姓名",
+		"性别",
+		"员工职位",
+		"手机",
+		"所属部门",
+		"入职时间",
+		"状态",
+		"操作"
+	],
+	"tableBody": [{
+			"pitch": "true",
+			"jobNumber": "1001",
+			"name": "刘菲菲",
+			"sex": "男",
+			"position": "经理",
+			"tel": "15236988554",
+			"section": "软装部",
+			"time": "2010-5-1",
+			"state": "在职"
+		},{
+			"pitch": "true",
+			"jobNumber": "1002",
+			"name": "吴菲菲",
+			"sex": "男",
+			"position": "经理",
+			"tel": "15236988554",
+			"section": "软装部",
+			"time": "2010-5-1",
+			"state": "在职"
+		},{
+			"pitch": "true",
+			"jobNumber": "1003",
+			"name": "郭菲菲",
+			"sex": "男",
+			"position": "经理",
+			"tel": "15236988554",
+			"section": "软装部",
+			"time": "2010-5-1",
+			"state": "在职"
+		},{
+			"pitch": "true",
+			"jobNumber": "1004",
+			"name": "李菲菲",
+			"sex": "男",
+			"position": "经理",
+			"tel": "15236988554",
+			"section": "软装部",
+			"time": "2010-5-1",
+			"state": "在职"
+		}	
+	]
+}

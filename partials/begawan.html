@@ -1,0 +1,28 @@
+<div ng-controller="navListController">
+	<nav-title></nav-title>
+	
+	<nav-list></nav-list>
+
+	<handle-paging></handle-paging>
+
+	<table class="table table-hover table-bordered">
+		<thead class="wx-table-thead">
+			<tr>
+				<th ng-repeat="item in tableHead track by $index">{{item}}</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="items in tableBody | filter: listFilter">
+				<td>{{items.title}}</td>
+				<td>{{items.deadline}}</td>
+				<td>{{items.execute}}</td>
+				<td>{{items.state}}</td>
+				<td>{{items.urgency}}</td>
+				<td>
+					<a href="#" class="wx-check">查看</a>
+				</td>				
+			</tr>
+		</tbody>
+	</table>
+
+</div>

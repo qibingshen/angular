@@ -1,0 +1,33 @@
+﻿{
+	"navList": [
+		"未完成的任务"
+	],
+	"tableHead": [
+		"标题",
+		"截止时间",
+		"执行人员",
+		"状态",
+		"紧急程度",
+		"操作"
+	],
+	"tableBody": [{
+			"title": "任务的分配",
+			"deadline": "2012-3-20",
+			"execute": "吴菲菲",
+			"state": "未完成",
+			"urgency": "一般"
+		},{
+			"title": "审核任务的分配",
+			"deadline": "2012-3-20",
+			"execute": "吴菲菲",
+			"state": "未完成",
+			"urgency": "一般"
+		},{
+			"title": "项目任务的分配",
+			"deadline": "2012-3-20",
+			"execute": "吴菲菲",
+			"state": "未完成",
+			"urgency": "一般"
+		}	
+	]
+}

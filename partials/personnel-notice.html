@@ -1,0 +1,34 @@
+<div>
+
+	<handle-paging is-add="isAdd" is-delete="isDelete" is-paging="isPaging"></handle-paging>
+
+	<table class="table table-hover table-bordered">
+		<thead class="wx-table-thead">
+			<tr>
+				<th ng-repeat="item in tableHead track by $index"> 
+					<input ng-if="$index == 0 ? true : false" type="checkbox">
+					<i ng-if="$index != 0 ? true : false">{{item}}</i>
+					
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="items in tableBody | filter: listFilter">
+				<td> <input type="checkbox"> </td>
+				<td>{{items.jobNumber}}</td>
+				<td>{{items.name}}</td>
+				<td>{{items.sex}}</td>
+				<td>{{items.position}}</td>
+				<td>{{items.tel}}</td>
+				<td>{{items.section}}</td>
+				<td>{{items.time}}</td>
+				<td>{{items.state}}</td>
+				<td>
+					<a ui-sref="personnelPant.employee" class="wx-redact">编辑</a>
+					<a href="#/personnel/{{4}}" class="wx-check">查看</a>
+				</td>
+					
+			</tr>
+		</tbody>
+	</table>
+</div>

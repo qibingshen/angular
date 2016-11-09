@@ -1,0 +1,20 @@
+<div class="ws-mian-head">
+	<p class="pull-left">
+		<button ng-if="isAdd" class="btn btn-default">  增加</button>
+		<button ng-if="isDelete" class="btn btn-default">删除</button>
+		<input type="text" class="ws-mian-text" ng-model="listFilter">
+		<button class="btn btn-default">搜索</button>
+		<a href="javascript:void(0)"> 高级搜索 >> </a>
+	</p>
+
+	<dl class="pull-right ws-mian-dl" ng-if="isPaging">
+		<dt> <button class="btn btn-default"> << </button> </dt>
+		<dt> <button class="btn btn-default"> < </button> </dt>
+		<dd><a href="#" class="btn">1</a></dd>
+		<dd><a href="#" class="btn">2</a></dd>
+		<dd><a href="#" class="btn">3</a></dd>
+		<dd><a href="#" class="btn">4</a></dd>
+		<dt> <button class="btn btn-default"> > </button> </dt>
+		<dt> <button class="btn btn-default"> >> </button> </dt>
+	</dl>
+</div>

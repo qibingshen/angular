@@ -1,0 +1,36 @@
+<div>
+	<nav-title></nav-title>
+	
+	<nav-list></nav-list>
+		
+	<handle-paging></handle-paging>
+
+	<table class="table table-hover table-bordered wx-table-archives">
+		<thead class="wx-table-thead">
+			<tr>
+				<th colspan="2">项目列表</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="item in tableBody track by $index">
+				<td><img ng-src="/images/{{item.img}}"></td>
+				<td>	
+					<ul class="wx-archives-ul">
+						<li>
+							<p>项目名称：</p>
+							<p>项目时间：</p>
+							<p>项目简介：</p>
+						</li>
+						<li>
+							<p>{{item.name}}</p>
+							<p>{{item.time}}</p>
+							<p>{{item.synopsis}}</p>
+						</li>
+					</ul>
+				</td>
+				<td> <a href="#" class="wx-check">查看</a> </td>
+			</tr>
+		</tbody>
+	</table>
+</div>
